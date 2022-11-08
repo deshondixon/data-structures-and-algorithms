@@ -126,6 +126,7 @@ const createList = (availableItems) => {
   availableItems.forEach((value, index) => {
     if(availableItems[index].available) {
       newArr.push(availableItems[index].name);
+
     }
   });
   return newArr;
