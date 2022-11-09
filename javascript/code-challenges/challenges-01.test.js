@@ -10,7 +10,6 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 
 const addOne = (arr) => {
   let newArr = [];
-  
   arr.forEach(num => {
     newArr.push(num + 1);
   });
