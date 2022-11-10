@@ -6,7 +6,7 @@ CHALLENGE 1 - Review
 Write a function called addTwo that takes in an array and adds two to every value using a for loop. Place the new value in a new array. Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
-const addTwo = (arr) => arr.map(num => num + 2);
+const addTwo = (arr) => arr.map(num => num+2);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -36,7 +36,7 @@ Write a function named oddValues that, given an array of integers as input, uses
 For example, oddValues([1,2,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
-const oddValues = (arr) => arr.filter(odd=> odd % 2);
+const oddValues = (arr) => arr.filter(odd=> odd%2);
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ Write a function named notInFirstArray that, given two arrays as input, uses fil
 For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
-const notInFirstArray = (forbiddenValues, arr) => arr.filter(elm => forbiddenValues.includes(elm);
+const notInFirstArray = (forbiddenValues, arr) => arr.filter(elem => !forbiddenValues.includes(elem));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
