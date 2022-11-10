@@ -23,11 +23,7 @@ CHALLENGE 2
 Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1. 
 ------------------------------------------------------------------------------------------------ */
 
-const addOne = (arr) => {
-
-  let newArr = arr.map(num => num +1);
-  return newArr;
-};
+const addOne = (arr) => arr.map(num => num +1);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -35,10 +31,7 @@ CHALLENGE 3
 Write a function named addQuestion that, given an array of strings, uses map to return a new array containing each string followed by a question mark character.
 ------------------------------------------------------------------------------------------------ */
 
-const addQuestion = (arr) => {
-  let newArr = arr.map(str => str + '?');
-  return newArr;
-};
+const addQuestion = (arr) => arr.map(str => str + '?');
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
