@@ -104,7 +104,7 @@ let starWarsData = [{
   gender: 'female'
 }];
 
-const returnNames = (arr) => arr.reduce();
+const returnNames = (arr) => arr.reduce((a, b) => a.concat(b.name), []);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -115,9 +115,9 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  let reversedArr = str.split('');
+  return reversedArr.reduce((a, b) => b + a, '');
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
