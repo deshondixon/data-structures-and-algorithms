@@ -114,10 +114,7 @@ Write a function named reversedString that takes in a string and returns a strin
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
 
-const reversedString = (str) => {
-  let reversedArr = str.split('');
-  return reversedArr.reduce((a, b) => b + a, '');
-};
+const reversedString = (str) => str.split('').reduce((a, b) => b + a,'');
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
