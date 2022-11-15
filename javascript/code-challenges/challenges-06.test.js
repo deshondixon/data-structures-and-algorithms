@@ -22,7 +22,8 @@ For example:
 Returns: ['dyoll', 'eimaj'];
 ------------------------------------------------------------------------------------------------ */
 
-const getNames = (arr) => arr.map(obj => obj.name.split('').reduce((a, b) => b + a,''));
+const getNames = (arr) => arr.map(obj => obj.name.split('').reverse().join(''));
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
