@@ -7,20 +7,20 @@ Write a function called sortStarWarsCharacters that sorts the characters in the 
 ------------------------------------------------------------------------------------------------ */
 
 let starWarsPeople = [{
-    name: 'C-3PO',
-    height: '167',
-    eye_color: 'yellow'
-  },
-  {
-    name: 'Luke Skywalker',
-    height: '172',
-    eye_color: 'blue'
-  },
-  {
-    name: 'R2-D2',
-    height: '96',
-    eye_color: 'red'
-  },
+  name: 'C-3PO',
+  height: '167',
+  eye_color: 'yellow'
+},
+{
+  name: 'Luke Skywalker',
+  height: '172',
+  eye_color: 'blue'
+},
+{
+  name: 'R2-D2',
+  height: '96',
+  eye_color: 'red'
+},
 ];
 
 const sortStarWarsCharacters = (starWarsArr) => starWarsArr.sort((a, b) => b.height - a.height);
@@ -55,9 +55,11 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-// Solution code here...
+  for (let i=0; i < str.length + 1; i++) {
+    result.push(str.slice(i));
+  }
   return result;
-}
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -113,9 +115,14 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  recipe.ingredients.forEach((ingredient) => {
+    let withoutAmount = ingredient.slice(ingredient.indexOf(' ') + 1);
+    let withoutUnit = withoutAmount.slice(withoutAmount.indexOf(' ') + 1);
+    result.push(withoutUnit);
+  });
   return result;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
