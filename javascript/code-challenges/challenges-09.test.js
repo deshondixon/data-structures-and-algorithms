@@ -35,9 +35,7 @@ Write a function named checkValues that takes in an object and a value and retur
 
 ------------------------------------------------------------------------------------------------ */
 
-const checkValues = (obj, value) => {
-
-};
+const checkValues = (obj, value) => Object.values(obj).includes(value) ? true : false;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
