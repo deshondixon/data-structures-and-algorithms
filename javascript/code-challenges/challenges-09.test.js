@@ -112,9 +112,7 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = [];
-  Object.values(arr);
-  return houses ? true : false;
+  
 };
 
 /*------------------------------------------------------------------------------------------------
