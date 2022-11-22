@@ -28,4 +28,4 @@ When you finish the assignment each day, make a new pull request from your daily
 
 ## References
 
-Got help for Martin Hansen and Don Choi solving code challenge 6.
+Got help from Martin Hansen and Don Choi.

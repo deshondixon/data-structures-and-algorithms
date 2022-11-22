@@ -57,7 +57,13 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // Solution code here...
+  let name = Object.keys(obj);
+  let numbers = Object.values(obj);
+  let arr = [];
+  for (let i = 0; i < name.length; i++) {
+    arr.push(`${name[i]}: ${numbers[i]}`);
+  }
+  return arr;
 };
 
 
@@ -111,9 +117,7 @@ const characters = [
   },
 ];
 
-const getHouses = (arr) => {
-  
-};
+const getHouses = (arr) => arr.map (obj => obj.house);
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
