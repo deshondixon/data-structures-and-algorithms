@@ -28,4 +28,4 @@ When you finish the assignment each day, make a new pull request from your daily
 
 ## References
 
-Got help from Martin Hansen and Don Choi.
+Got help from Martin Hansen and Don Choi. Used Sheyna's examples from class.

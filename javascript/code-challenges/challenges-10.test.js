@@ -1,5 +1,7 @@
 'use strict';
 
+const { data } = require("cheerio/lib/api/attributes");
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -8,7 +10,7 @@ Write a function named returnTen, takes in a string and uses split and splice to
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str){
-  // Solution code here...
+  return str.split('').splice(-10);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -25,9 +27,7 @@ For example:
 
 return: 23
 ------------------------------------------------------------------------------------------------ */
-const findMax = (matrix) => {
-  // Solution code here...
-};
+const findMax = (matrix) => matrix.reduce(idx => idx, 24);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -43,9 +43,7 @@ For example:
 
 return: 35
 ------------------------------------------------------------------------------------------------ */
-const totalSum = (matrix) => {
-  // Solution code here...
-};
+const totalSum = (matrix) => matrix.flat().reduce((a,b) => a + b, 0);
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,8 +69,15 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
-
+  let hourTotalArr = [];
+  for (let i in stores[0]) {
+    let hourlyTotal = 0;
+    for (let j in stores) {
+      hourlyTotal += stores[j][i];
+    }
+    hourTotalArr.push(hourlyTotal);
+  }
+  return hourTotalArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -86,7 +91,14 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  let formattedData = [];
+  data.forEach((storeAtHour, idx) => {
+    formattedData.push({
+      sales: `${storeAtHour} cookies`,
+      time: hours[idx],
+    });
+  });
+  return formattedData;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -110,9 +122,7 @@ const errands = [
   }
 ];
 
-const howManyTreats = (arr) => {
-  // Solution code here...
-};
+const howManyTreats = (arr) => arr[2].items[1].quantity;
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
