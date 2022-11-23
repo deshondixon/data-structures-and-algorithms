@@ -27,7 +27,7 @@ If the word is between 5 and 10 characters long, return true. Otherwise, return 
 ------------------------------------------------------------------------------------------------ */
 
 const validateWord = (word) => {
-  // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,9 +38,7 @@ Write a function named hasNumber that uses a regular expression pattern to deter
 If it does, return true. If not, return false.
 ------------------------------------------------------------------------------------------------ */
 
-const hasNumber = (string) => {
-  // Solution code here...
-};
+const hasNumber = (string) => (/[a-zAA-Z]\d/g.test(string));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -59,7 +57,8 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  // Solution code here...
+  const emailPattern = /^[a-zA-Z0-9]+.?[a-zA-Z0-9]+@[a-zA-Z0-9]+(.com|.net|.org)$/;
+  return emailPattern.test(email);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +83,8 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  // Solution code here...
+  let phonePattern = /(^[0-9]{3}|^(\(\d{3}\)))[- ]?\d{3}[- ]?\d{4}$/;
+  return phonePattern.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
