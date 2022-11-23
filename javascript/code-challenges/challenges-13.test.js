@@ -6,10 +6,8 @@ CHALLENGE 1 - Review
 Write a function named longestString that takes in an array of strings and returns the index position of the longest string. 
 ------------------------------------------------------------------------------------------------ */
 
-const longestString = (arr) => {
-// Solution code here...
-};
-  
+const longestString = (arr) => arr.sort((a,b) => a.length > b.length ? a : b).indexOf('', 2) ;
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -18,9 +16,7 @@ Write a function named firstLetters that takes in an array of strings and return
 For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 'w', 'w', ':']
 ------------------------------------------------------------------------------------------------ */
 
-const firstLetters = (arr) => {
-  // Solution code here...
-};
+const firstLetters = (arr) => arr.map(str => str[0]);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -30,9 +26,7 @@ Write a function named findHappiness that takes in an array of strings and retur
 For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this is great :)', ':)))))']
 ------------------------------------------------------------------------------------------------ */
 
-const findHappiness = (arr) => {
-  // Solution code here...
-};
+const findHappiness = (arr) => arr.filter(str => str.includes(':)'));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -285,4 +279,3 @@ xdescribe('Testing challenge 11', () => {
     expect(characterByIndex(['wow', 'wow', 'wow'])).toStrictEqual(['w', 'o', 'w']);
   });
 });
-
