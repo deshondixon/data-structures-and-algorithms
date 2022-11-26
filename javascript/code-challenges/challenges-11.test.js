@@ -133,9 +133,7 @@ let starWarsData = [{
   gender: 'female'
 }];
 
-let findMaleAndFemale = (data) => {
-
-};
+let findMaleAndFemale = (data) => data.filter(character => character.gender === 'male' || character.gender === 'female').reduce((str, character) => str === '' ? str = str + character.name : str = str + ` and ${character.name}`, '');
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
