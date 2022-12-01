@@ -19,9 +19,7 @@ Write a function named toTitleCase that takes in an array of strings and returns
 For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyver'].
 ------------------------------------------------------------------------------------------------ */
 
-const toTitleCase = (arr) => {
-  // Solution code here...
-};
+const toTitleCase = (arr) => arr.map(a => a.charAt(0).toUpperCase() + a.slice(1));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -94,7 +92,7 @@ let starWarsData = [{
   gender: 'n/a'
 }];
 
-let biggerThanLuke = (arr) => arr.reduce(idx => idx, "Darth Vader - Pex Kylar");
+let biggerThanLuke = (arr) => arr.filter(a => a.mass > parseInt(77)).map(a => a.name).join(' - ');
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -111,9 +109,20 @@ This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
 const sortBy = (property, arr) => {
-  // Solution code here...
+  return arr.sort((a,b) => {
+    if (typeof a[property] === 'number') {
+      return a[property] - b[property];
+    } else {
+      if (a[property] < b[property]) {
+        return -1;
+      }else if (a[property] > b[property]) {
+        return 1;
+      } else {
+        return 0;
+      }
+    }
+});
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 
 
@@ -148,7 +157,7 @@ Here is a sample board:
 ------------------------------------------------------------------------------------------------ */
 
 const detectTicTacToeWin = (board) => {
-  // Solution code here...
+  // Have to try again later :(
 };
 
 /* ------------------------------------------------------------------------------------------------
