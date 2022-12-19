@@ -157,7 +157,28 @@ Here is a sample board:
 ------------------------------------------------------------------------------------------------ */
 
 const detectTicTacToeWin = (board) => {
-  // Have to try again later :(
+  let ticTacToeWin = (input) => {
+    if(board[0][0] === input && board[0][1] === input && board[0][2] === input) {
+      return true;
+    } else if(board[1][0] === input && board[1][1] === input && board[1][2] === input) {
+      return true;
+      
+    }  else if(board[0][0] === input && board[1][0] === input && board[2][0] === input){
+      return true;
+    }  else if(board[2][0] === input && board[2][1] === input && board[2][2] === input){
+      return true;
+    } else if(board[0][1] === input && board[1][1] === input && board[2][1] === input) {
+      return true;
+    } else if(board[0][2] === input && board[1][2] === input && board[2][2] === input) {
+      return true;
+    } else if(board[0][0] === input && board[1][1] === input && board[2][2] === input) {
+      return true;
+    } else if(board[0][2] === input && board[1][1] === input && board[2][0] === input) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 };
 
 /* ------------------------------------------------------------------------------------------------
