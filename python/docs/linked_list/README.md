@@ -55,3 +55,6 @@ Ensure your tests are passing before you submit your solution.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+
+## API
+<!-- Description of each method publicly available to your Linked List -->
