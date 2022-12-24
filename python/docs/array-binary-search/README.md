@@ -1,4 +1,4 @@
-# Reverse an Array
+# Array Binary Search
 <!-- Description of the challenge -->
 Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key.
 
