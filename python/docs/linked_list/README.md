@@ -1,6 +1,6 @@
 # Singly Linked List
 
-[Linked List Code Challenge](data_structures/linked_list.py)
+[Linked List Code Challenge](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/data_structures/linked_list.py)
 
 <!-- Description of the challenge -->
 
