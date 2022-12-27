@@ -22,7 +22,9 @@ To run your tests
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
-### Table of Contents
+## Table of Contents
 
-- [Array Reverse](python/docs/array_reverse/README.md)
-- [Array Insert Shift](python/docs/array_insert_shift/README.md)
+- [Array Reverse](docs/array_reverse/README.md)
+- [Array Insert Shift](docs/array_insert_shift/README.md)
+- [Array Binary Search](docs/array_binary_search/README.md)
+- [Linked List](docs/linked_list/README.md)
