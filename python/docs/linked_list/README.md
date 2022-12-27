@@ -1,4 +1,7 @@
 # Singly Linked List
+
+[Linked List Code Challenge](data_structures/linked_list.py)
+
 <!-- Description of the challenge -->
 
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
@@ -49,12 +52,29 @@ Will return false when searching for a value in the linked list that does not ex
 Can properly return a collection of all the values that exist in the linked list
 Ensure your tests are passing before you submit your solution.
 
-## Whiteboard Process
-<!-- Embedded whiteboard image -->
-![Whiteboard Image](./linked-list.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
 
-## API
-<!-- Description of each method publicly available to your Linked List -->
+- Singly linked lists use the Node class to create nodes
+
+- By using the Node class, we add nodes to the LinkedList class
+
+## Tests
+
+Wrote tests to prove the following functionality:
+
+- Can successfully instantiate an empty linked list
+- Can properly insert into the linked list
+- The head property will properly point to the first node in the linked list
+- Can properly insert multiple nodes into the linked list
+- Will return true when finding a value within the linked list that exists
+- Will return false when searching for a value in the linked list that does not exist
+- Can properly return a collection of all the values that exist in the linked list.
+
+## References
+Used the following references to help complete code challenge:
+- https://www.tutorialspoint.com/python_data_structure/python_linked_lists.htm
+- https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-05/resources/singly_linked_list.html
+- https://medium.com/basecs/whats-a-linked-list-anyway-part-1-d8b7e6508b9d
+- https://medium.com/basecs/whats-a-linked-list-anyway-part-2-131d96f71996
