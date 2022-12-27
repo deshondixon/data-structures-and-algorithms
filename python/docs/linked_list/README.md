@@ -1,5 +1,7 @@
-# Linked List Implementation
+# Singly Linked List
+
 [Linked List Code Challenge](data_structures/linked_list.py)
+
 <!-- Description of the challenge -->
 
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
@@ -53,6 +55,7 @@ Ensure your tests are passing before you submit your solution.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+
 - Singly linked lists use the Node class to create nodes
 
 - By using the Node class, we add nodes to the LinkedList class
