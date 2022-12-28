@@ -35,6 +35,17 @@ class LinkedList:
             current = current.nextval
         return False
 
+    def append(self, dataval):
+        current = self.headval
+
+        if current is not None:
+            self.headval = Node(dataval)
+        else:
+            while current.nextval:
+                current = current.nextval
+            current.nextval = Node(dataval)
+        return False
+
 
 class TargetError:
     pass
