@@ -83,3 +83,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Linked List](docs/linked_list/README.md)
 - [Linked List Insertions](docs/linked_list_insertions/README.md)
 - [Linked List KTH](docs/linked_list_kth/README.md)
+- [Linked List ZIP](docs/linked_list_zip/README.md)
