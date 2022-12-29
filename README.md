@@ -28,3 +28,4 @@ To run your tests
 - [Array Insert Shift](docs/array_insert_shift/README.md)
 - [Array Binary Search](docs/array_binary_search/README.md)
 - [Linked List](docs/linked_list/README.md)
+- [Linked List Insertions](docs/linked_list_insertions/README.md)
