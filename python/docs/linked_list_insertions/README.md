@@ -21,7 +21,8 @@ Write the following methods for the Linked List class:
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![coming soon...](./array-binary-search.png)
+![coming soon...](./White Board.png)
+
 
 
 ## Approach & Efficiency
