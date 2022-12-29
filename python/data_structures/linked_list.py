@@ -1,9 +1,3 @@
-class Node:
-    def __init__(self, dataval):
-        self.dataval = dataval
-        self.nextval = None
-
-
 class LinkedList:
     def __init__(self):
         # initialization here
@@ -37,7 +31,6 @@ class LinkedList:
 
     def append(self, dataval):
         current = self.headval
-
         if current is not None:
             self.headval = Node(dataval)
         else:
@@ -46,6 +39,12 @@ class LinkedList:
             current.nextval = Node(dataval)
         return False
 
+
+class Node:
+    def __init__(self, dataval):
+        self.dataval = dataval
+        self.nextval = None
+        
 
 class TargetError:
     pass
