@@ -82,3 +82,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Array Binary Search](docs/array_binary_search/README.md)
 - [Linked List](docs/linked_list/README.md)
 - [Linked List Insertions](docs/linked_list_insertions/README.md)
+- [Linked List KTH](docs/linked_list_kth/README.md)
