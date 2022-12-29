@@ -11,7 +11,7 @@ def test_add_node():
 
     graph = Graph()
 
-    expected = "spam"  # a vertex's value that comes back
+    expected = "spam"  # a vertex's dataval that comes back
 
     actual = graph.add_node("spam").dataval
 
