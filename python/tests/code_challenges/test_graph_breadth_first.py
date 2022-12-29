@@ -10,7 +10,7 @@ def test_exists():
 def test_bfs(graph):
     nodes = graph.get_nodes()
     root = nodes[0]
-    print(root.value)
+    print(root.dataval)
     actual = graph.breadth_first(root)
     expected = ["Pandora", "Arendelle", "Metroville", "Monstropolis", "Narnia", "Naboo"]
     assert actual == expected

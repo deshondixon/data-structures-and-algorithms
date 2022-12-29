@@ -11,7 +11,7 @@ def test_exists():
 def test_push_onto_empty():
     s = Stack()
     s.push("apple")
-    actual = s.top.value
+    actual = s.top.dataval
     expected = "apple"
     assert actual == expected
 
@@ -22,7 +22,7 @@ def test_push_onto_full():
     s.push("apple")
     s.push("banana")
     s.push("cucumber")
-    actual = s.top.value
+    actual = s.top.dataval
     expected = "cucumber"
     assert actual == expected
 

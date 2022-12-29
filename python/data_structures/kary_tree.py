@@ -14,7 +14,7 @@ class KaryTree:
 
         while not queue.is_empty():
             node = queue.dequeue()
-            collection.append(node.value)
+            collection.append(node.dataval)
             for child in node.children:
                 queue.enqueue(child)
 

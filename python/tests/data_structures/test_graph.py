@@ -11,9 +11,9 @@ def test_add_node():
 
     graph = Graph()
 
-    expected = "spam"  # a vertex's value that comes back
+    expected = "spam"  # a vertex's dataval that comes back
 
-    actual = graph.add_node("spam").value
+    actual = graph.add_node("spam").dataval
 
     assert actual == expected
 
@@ -52,7 +52,7 @@ def test_add_edge():
     g.add_edge(apple, banana, 5)
     neighbors = g.get_neighbors(apple)
     assert len(neighbors) == 1
-    assert neighbors[0].vertex.value == "banana"
+    assert neighbors[0].vertex.dataval == "banana"
     assert neighbors[0].weight == 5
 
 
@@ -63,7 +63,7 @@ def test_bouquet():
     g.add_edge(apple, apple, 10)
     neighbors = g.get_neighbors(apple)
     assert len(neighbors) == 1
-    assert neighbors[0].vertex.value == "apple"
+    assert neighbors[0].vertex.dataval == "apple"
     assert neighbors[0].weight == 10
 
 
@@ -128,6 +128,6 @@ def test_get_neighbors():
 
     neighbor_edge = neighbors[0]
 
-    assert neighbor_edge.vertex.value == "banana"
+    assert neighbor_edge.vertex.dataval == "banana"
 
     assert neighbor_edge.weight == 44
