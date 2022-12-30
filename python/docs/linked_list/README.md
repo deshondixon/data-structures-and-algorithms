@@ -2,6 +2,7 @@
 
 [Linked List Code Challenge](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/data_structures/linked_list.py)
 
+## Challenge
 <!-- Description of the challenge -->
 
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
@@ -14,30 +15,27 @@ Upon instantiation, an empty Linked List should be created.
 
 The class should contain the following methods
 
-insert
+- insert
 
-Arguments: value
-
-Returns: nothing
+  - Arguments: value
+  - Returns: nothing
 
 Adds a new node with that value to the head of the list with an O(1) Time performance.
-includes
 
-Arguments: value
+- includes
 
-Returns: Boolean
+  - Arguments: value
+  - Returns: Boolean
 
 Indicates whether that value exists as a Node’s value somewhere within the list.
-to string
 
-Arguments: none
+- to string
 
-Returns: a string representing all the values in the Linked List, formatted as:
-"{ a } -> { b } -> { c } -> NULL"
+  - Arguments: none
+  - Returns: a string representing all the values in the Linked List, formatted as:
+  "{ a } -> { b } -> { c } -> NULL"
 
 Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
-
-Be sure to follow your language/frameworks standard naming conventions (e.g. C# uses PascalCasing for all method and class names).
 
 Any exceptions or errors that come from your code should be contextual, descriptive, capture-able errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom error that describes what went wrong in calling the methods you wrote for this lab.
 
@@ -52,6 +50,9 @@ Will return false when searching for a value in the linked list that does not ex
 Can properly return a collection of all the values that exist in the linked list
 Ensure your tests are passing before you submit your solution.
 
+## Big O Notation
+    - Time is O(1) because the utilizing insert will replace head with node.
+    - Space is O(n) because of the amount of space taken up in the  memory will increase because new items added to thr list will be stored there.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
@@ -59,6 +60,24 @@ Ensure your tests are passing before you submit your solution.
 - Singly linked lists use the Node class to create nodes
 
 - By using the Node class, we add nodes to the LinkedList class
+
+## API
+
+- insert
+
+  - Arguments: value
+  - Returns: nothing
+
+- includes
+
+  - Arguments: value
+  - Returns: Boolean
+
+- to string
+
+  - Arguments: none
+  - Returns: a string representing all the values in the Linked List, formatted as:
+  "{ a } -> { b } -> { c } -> NULL"
 
 ## Tests
 
