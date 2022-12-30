@@ -28,7 +28,7 @@ const sortStarWarsCharacters = (starWarsArr) => starWarsArr.sort((a, b) => b.hei
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named removeThree that takes an index and an array. The function should removes three items in the array starting with the value at the index.
+Write a function named removeThree that takes an index and an array. The function should removes three items in the array starting with the dataval at the index.
 ------------------------------------------------------------------------------------------------ */
 
 const removeThree = (idx, arr) => arr.reduce(idx => idx, [1, 2, 6, 7, 8]);

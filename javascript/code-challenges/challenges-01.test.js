@@ -5,7 +5,7 @@ CHALLENGE 1
 
 Write a function named `addOne` that takes an array of numbers, and returns a new array of the numbers, incremented by 1.
 
-Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
+Use `forEach` to loop over the input array and work with each dataval.  Push the new dataval into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
@@ -22,7 +22,7 @@ CHALLENGE 2
 
 Write a function named `addExclamation` that takes an array of strings, and returns a new array of the same strings with an "!" added to the end.
 
-Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
+Use `forEach` to loop over the input array. Modify each string, and add the updated dataval into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
@@ -78,7 +78,7 @@ const speaker = (words, callback) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named addValues that takes in an array and a value and pushes the value into the array. This function does not need a return statement.
+Write a function named addValues that takes in an array and a dataval and pushes the dataval into the array. This function does not need a return statement.
 
 Then, write a function named addNumbers that takes in four arguments:
   - A number to be added to an array
@@ -161,13 +161,13 @@ Run your tests from the console: jest challenges-01.test.js
 ------------------------------------------------------------------------------------------------ */
 
 describe('Testing challenge 1', () => {
-  test('It should return an array with 1 added to each value of the original array', () => {
+  test('It should return an array with 1 added to each dataval of the original array', () => {
     expect(addOne([1, 2, 3, 4, 5])).toStrictEqual([2, 3, 4, 5, 6]);
   });
 });
 
 describe('Testing challenge 2', () => {
-  test('It should return an array with an exclamation point added to each value of the original array', () => {
+  test('It should return an array with an exclamation point added to each dataval of the original array', () => {
     expect(addExclamation(['hi', 'how', 'are', 'you'])).toStrictEqual(['hi!', 'how!', 'are!', 'you!']);
   });
 });

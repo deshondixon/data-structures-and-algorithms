@@ -3,7 +3,7 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function that finds the maximum value in an array
+Write a function that finds the maximum dataval in an array
 using the 'reduce' method.
 
 E.g. [4,2,7,5,9,2] -> 9
@@ -30,7 +30,7 @@ const getCourseKeys = (obj) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named checkValues that takes in an object and a value and returns true if the value is in the object.
+Write a function named checkValues that takes in an object and a dataval and returns true if the dataval is in the object.
 
 
 ------------------------------------------------------------------------------------------------ */
@@ -235,11 +235,11 @@ describe('Testing challenge 2', () => {
 });
 
 describe('Testing challenge 3', () => {
-  test('It should return true if the value is in the object', () => {
+  test('It should return true if the dataval is in the object', () => {
     expect(checkValues({ class: '301' }, '301')).toBe(true);
   });
 
-  test('It should return false if the value is not in the object', () => {
+  test('It should return false if the dataval is not in the object', () => {
     expect(checkValues({ class: '301' }, '401')).toBe(false);
   });
 });

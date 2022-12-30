@@ -16,7 +16,7 @@ function returnTen(str){
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named findMax that takes in a matrix of positive numbers and returns the number with the highest value.
+Write a function named findMax that takes in a matrix of positive numbers and returns the number with the highest dataval.
 
 For example:
 [
@@ -183,7 +183,7 @@ CHALLENGE 10 - Stretch Goal
 
 Write a function named lowestWeeklyAverage that accepts a two-dimensional array of daily temperatures grouped week-by-week.
 
-Calculate the average temperature for each week and return the value of the lowest weekly average temperature.
+Calculate the average temperature for each week and return the dataval of the lowest weekly average temperature.
 
 For example, in the data set below, the lowest weekly average is 46, which is the average of the temperatures in week 2. All other weeks have average temperatures that are greater than 46.
 ------------------------------------------------------------------------------------------------ */
@@ -234,7 +234,7 @@ describe('Testing challenge 1', () => {
 });
 
 describe('Testing challenge 2', () => {
-  test('It should return the max value', () => {
+  test('It should return the max dataval', () => {
     expect(findMax([[13,24,24,2], [2,5,6], [2,3]])).toStrictEqual(24);
   });
 });

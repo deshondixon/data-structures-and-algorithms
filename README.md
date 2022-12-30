@@ -15,7 +15,7 @@ If you have not already done so, run `npm install` from within this folder to se
 To run your tests
 
 - Change to the `javascript` folder
-- run `npm test` to run all of the tests
+- run `npm test` to run all the tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
 ### 401 Data Structures, Code Challenges
@@ -24,8 +24,11 @@ To run your tests
 
 ## Table of Contents
 
-- [Array Reverse](docs/array_reverse/README.md)
-- [Array Insert Shift](docs/array_insert_shift/README.md)
-- [Array Binary Search](docs/array_binary_search/README.md)
-- [Linked List](docs/linked_list/README.md)
-- [Linked List Insertions](docs/linked_list_insertions/README.md)
+- [Array Reverse](python/docs/array_reverse/README.md)
+- [Array Insert Shift](python/docs/array_insert_shift/README.md)
+- [Array Binary Search](python/docs/array_binary_search/README.md)
+- [Linked List](python/docs/linked_list/README.md)
+- [Linked List Insertions](python/docs/linked_list_insertions/README.md)
+- [Linked List KTH](python/docs/linked_list_kth/README.md)
+- [Linked List ZIP](python/docs/linked_list_zip/README.md)
+- [Stack and Queue](python/docs/stack_and_queue/README.md)

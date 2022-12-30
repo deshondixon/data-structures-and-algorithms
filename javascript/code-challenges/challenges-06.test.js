@@ -51,7 +51,7 @@ const appendFirstToLast = (arr) => arr.push(arr[0]);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. The value of the yearBorn property should be the integer that was passed in.
+Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. The dataval of the yearBorn property should be the integer that was passed in.
 
 The change should be reflected in the source object that was passed in to the function. That is, the function should modify the object 'in place'.
 
@@ -68,7 +68,7 @@ const addBirthYearProperty = (obj, year) => obj.yearBorn = year;
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
 
-Write a function that accepts an array of people objects and adds a new property called isAuthor to each object in the list. Set the value of the new property to true.
+Write a function that accepts an array of people objects and adds a new property called isAuthor to each object in the list. Set the dataval of the new property to true.
 
 The function should modify the object in place. Do not use a return statement.
 

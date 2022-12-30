@@ -171,7 +171,7 @@ const countNumberOfChildren = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
 
-Write a function that, given an array of numbers as input, uses reduce to calculate the array's average value.
+Write a function that, given an array of numbers as input, uses reduce to calculate the array's average dataval.
 
 Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */

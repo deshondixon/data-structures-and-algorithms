@@ -20,7 +20,7 @@ const raisedToTheThird = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named addOne that, given an array of numbers, uses map to return a new array with each value simply incremented by 1.
+Write a function named addOne that, given an array of numbers, uses map to return a new array with each dataval simply incremented by 1.
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => arr.map(num => num +1);
@@ -94,7 +94,7 @@ const charCode = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
 
-Write a function that, given an array of numbers as input, uses map to return a new array where each element is either the string "even" or the string "odd", based on each value.
+Write a function that, given an array of numbers as input, uses map to return a new array where each element is either the string "even" or the string "odd", based on each dataval.
 
 If any element in the array is not a number, the resulting array should have the string "N/A" in its place.
 
