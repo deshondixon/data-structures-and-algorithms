@@ -57,7 +57,7 @@ peek
 - Should raise exception when called on empty stack
 is empty
 - Arguments: none
-- Returns: Boolean indicating whether or not the queue is empty
+- Returns: Boolean indicating whether the queue is empty
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
@@ -72,9 +72,9 @@ is empty
 
 ## Tests
 
-[Stack List Unit Tests](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/tests/data_strucutres/test_stack.py)
+[Stack List Unit Tests](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/tests/data_structures/test_stack.py)
 
-[Queue List Unit Tests](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/tests/data_strucutres/test_queue.py)
+[Queue List Unit Tests](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/tests/data_structures/test_queue.py)
 
 Wrote tests to prove the following functionality:
 
