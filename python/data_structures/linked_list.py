@@ -1,31 +1,20 @@
 class LinkedList:
     def __init__(self):
-        # initialization here
         self.headval = None
 
     def __str__(self):
-        # method body here
-        printval = self.headval
-        string_values = ""
-        while printval is not None:
-            string_values += f"{{ {str(printval.dataval)} }} -> "
-            printval = printval.nextval
-        string_values += "NULL"
-        return string_values
-
-    def append(self, dataval):
         current = self.headval
-        while current.nextval is not None:
+        result = ""
+        while current is not None:
+            result += "{{ {0} }} -> ".format(current.dataval)
             current = current.nextval
-        current.nextval = Node(dataval)
+        result += "NULL"
+        return result
 
     def insert(self, dataval):
         new_node = Node(dataval)
-        if self.headval:
-            new_node.nextval = self.headval
-            self.headval = new_node
-        else:
-            self.headval = new_node
+        new_node.nextval = self.headval
+        self.headval = new_node
 
     def includes(self, dataval):
         current = self.headval
@@ -35,6 +24,15 @@ class LinkedList:
             current = current.nextval
         return False
 
+    def append(self, dataval):
+        new_node = Node(dataval)
+        if self.headval is None:
+            self.headval = new_node
+            return
+        current = self.headval
+        while current.nextval is not None:
+            current = current.nextval
+        current.nextval = new_node
 
     def insert_before(self, before, dataval):
         current = self.headval
@@ -79,22 +77,12 @@ class LinkedList:
             current = current.nextval
         return current.dataval
 
-    def append(self, dataval):
-        current = self.headval
-        if current is not None:
-            self.headval = Node(dataval)
-        else:
-            while current.nextval:
-                current = current.nextval
-            current.nextval = Node(dataval)
-        return False
-
 
 class Node:
     def __init__(self, dataval):
         self.dataval = dataval
         self.nextval = None
-        
+
 
 class TargetError(Exception):
     pass
