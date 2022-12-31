@@ -61,21 +61,20 @@ class LinkedList:
         except Exception as e:
             raise TargetError(e)
 
-    def kth_from_end(self, dataval):
+    def kth_from_end(self, k):
+        if k < 0:
+            raise TargetError(Exception)
         current = self.headval
-        length = 0
+        kth_node = self.headval
+        counter = 0
         while current is not None:
+            if counter > k:
+                kth_node = kth_node.nextval
             current = current.nextval
-            length += 1
-        if dataval >= length:
+            counter += 1
+        if counter <= k:
             raise TargetError(Exception)
-        if dataval < 0:
-            raise TargetError(Exception)
-        current = self.headval
-        for x in range(0, length - dataval - 1):
-            print(current.dataval)
-            current = current.nextval
-        return current.dataval
+        return kth_node.dataval
 
 
 class Node:
