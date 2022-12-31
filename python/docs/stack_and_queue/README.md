@@ -16,6 +16,11 @@ Stack
 - Create a Stack class that has a top property. It creates an empty Stack when instantiated.
 - This object should be aware of a default empty value assigned to top when the stack is created.
 
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+![coming soon...](./White Board.png)
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
