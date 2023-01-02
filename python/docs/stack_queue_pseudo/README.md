@@ -1,8 +1,6 @@
-# Stacks and Queue Pseduo
+# Stacks and Queue Pseudo
 
-[Stack Code Challenge](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/data_structures/stack.py)
-
-[Queue Code Challenge](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/data_structures/stack.py)
+[Stack and Queue Pseudo Code Challenge](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue_pseudo.py)
 
 ## Challenge
 <!-- Description of the challenge -->
@@ -29,6 +27,10 @@ Internally, utilize 2 Stack instances to create and manage the queue
   - dequeue
       - Arguments: none
       - Extracts a value from the PseudoQueue, using a first-in, first-out approach.
+
+## Tests
+
+[Stack and Queue Pseudo Unit Tests](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/tests/data_structures/test_stack.py)
 
 ## Solution
 
