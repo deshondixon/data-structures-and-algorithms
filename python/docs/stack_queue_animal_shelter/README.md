@@ -18,8 +18,8 @@ The shelter operates using a first-in, first-out approach.
 
 Big O Notation:
 
-- time -
-- space -
+- time - o(1) because constant time regardless of elements added.
+- space - because it grows linearly when elements are added.
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
 
@@ -39,4 +39,44 @@ Big O Notation:
 
 ## Solution
 
+    class Queue(deque):
+      def enqueue(self, value):
+        self.append(value)
 
+      def dequeue(self):
+        return self.popleft()
+
+    class AnimalShelter:
+      def __init__(self, stretch=False):
+        self.dogs = Queue()
+        self.cats = Queue()
+        self.stretch = stretch
+        if stretch:
+          self.animals = Queue()
+
+      def enqueue(self, animal):
+        if self.strecth:
+            self.animals.enqueue(animal)
+        if isinstance(animal, Cat):
+            self.cats.enqueue(animal)
+        else:
+            self.dogs.enqueue(animal)
+
+      def dequeue(self, pref=""):
+        if pref == "cat":
+            return self.cats.dequeue()
+        elif pref == "dog":
+            return self.dogs.dequeue()
+        elif self.stretch:
+            animal = self.animals.dequeue()
+            if isinstance(animal, Cat):
+                self.cats.dequeue()
+            else:
+                self.dogs.dequeue()
+            return animal
+        else:
+            return None
+
+## Reference
+
+Had trouble completing this code challenge was able to figure out from JB's reference in class. Had to make step-through short to fit in screenshot.
