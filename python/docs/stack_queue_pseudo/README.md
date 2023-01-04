@@ -17,7 +17,11 @@ Internally, utilize 2 Stack instances to create and manage the queue
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Big O Notation:
 
+- O(n) time - because transfer of all items in first stack to second stack.
+
+- O(n) space - because two stacks are used and depend on amount of items in queue how much space is used up.
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
 
@@ -30,7 +34,7 @@ Internally, utilize 2 Stack instances to create and manage the queue
 
 ## Tests
 
-[Stack and Queue Pseudo Unit Tests](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/tests/data_structures/test_stack.py)
+[Stack and Queue Pseudo Unit Tests](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/tests/code_challenges/test_stack_queue_pseudo.py)
 
 ## Solution
 
