@@ -32,3 +32,6 @@ To run your tests
 - [Linked List KTH](python/docs/linked_list_kth/README.md)
 - [Linked List ZIP](python/docs/linked_list_zip/README.md)
 - [Stack and Queue](python/docs/stack_and_queue/README.md)
+- [Stack and Queue Pseudo](python/docs/stack_queue_pseudo/README.md)
+- [Stack and Queue Animal Shelter](python/docs/stack_queue_animal_shelter/README.md)
+- [Stack and Queue Brackets](python/docs/stack_queue_brackets/README.md)
