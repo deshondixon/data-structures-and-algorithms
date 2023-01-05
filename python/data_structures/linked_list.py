@@ -35,20 +35,21 @@ class LinkedList:
         current.nextval = new_node
 
     def insert_before(self, before, dataval):
+        if self.headval is None:
+            raise TargetError("List is empty")
+        if not self.includes(before):
+            raise TargetError("Value not found in list")
         current = self.headval
         previous = None
-        try:
-            while current.dataval is not before:
-                previous = current
-                current = current.nextval
-            new_node = Node(dataval)
-            new_node.nextval = current
-            if previous is not None:
-                previous.nextval = new_node
-            if previous is None:
-                self.headval = new_node
-        except Exception as e:
-            raise TargetError(e)
+        while current.dataval != before:
+            previous = current
+            current = current.nextval
+        new_node = Node(dataval)
+        new_node.nextval = current
+        if previous is not None:
+            previous.nextval = new_node
+        if previous is None:
+            self.headval = new_node
 
     def insert_after(self, after, value):
         current = self.headval
