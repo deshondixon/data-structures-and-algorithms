@@ -7,20 +7,37 @@
 ## Challenge
 <!-- Description of the challenge -->
 
-Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue
+Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue.
+
+Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
+
+Create a Stack class that has a top property. It creates an empty Stack when instantiated.
+This object should be aware of a default empty value assigned to top when the stack is created.
+
+Create a Queue class that has a front property. It creates an empty Queue when instantiated.
+This object should be aware of a default empty value assigned to front when the queue is created.
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![coming soon...](./White Board.png)
+- Did not ask for whiteboard on this assignment.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
+Big O Notation:
+#### Stack
+- time O(1) - because the time to complete these methods is not affected by the stack size.
+- space O(1) - because the amount of nodes is unaffected by the stack size.
+
+#### Queue
+- time O(1) - because the size of the queue does not affect codes execution time.
+- space O(1) - because the amount of nodes in queue does not affect the space of the queue.
+
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
 
-### Stack
+#### Stack
 
 push
 - Arguments: value
@@ -41,7 +58,7 @@ is empty
 - Arguments: none
 - Returns: Boolean indicating whether the stack is empty.
 
-### Queue
+#### Queue
 
 enqueue
 - Arguments: value
@@ -82,3 +99,76 @@ Wrote tests to prove the following functionality:
 - Can successfully empty a queue after multiple dequeues
 - Can successfully instantiate an empty queue
 - Calling dequeue or peek on empty queue raises exception
+
+## Solution
+
+### Stack
+
+    class Node:
+        def __init__(self, dataval, next=None):
+            self.dataval = dataval
+            self.next = next
+
+
+    class Stack:
+        def __init__(self):
+            self.top = None
+
+        def push(self, dataval):
+            new_node = Node(dataval)
+            new_node.next = self.top
+            self.top = new_node
+
+        def pop(self):
+            if self.top is None:
+                raise InvalidOperationError("Method not allowed on empty collection")
+            dataval = self.top.dataval
+            self.top = self.top.next
+            return dataval
+
+        def peek(self):
+            if self.top is None:
+                raise InvalidOperationError("Method not allowed on empty collection")
+            return self.top.dataval
+
+        def is_empty(self):
+            return self.top is None
+
+### Queue
+
+    class Node:
+        def __init__(self, dataval):
+            self.dataval = dataval
+            self.next = None
+
+
+    class Queue:
+
+        def __init__(self):
+            self.front = None
+            self.back = None
+
+        def enqueue(self, dataval):
+            new_node = Node(dataval)
+            if self.back:
+                self.back.next = new_node
+                self.back = new_node
+            else:
+                self.front = self.back = new_node
+
+        def dequeue(self):
+            if self.front is None:
+                raise InvalidOperationError
+            dequeued = self.front
+            self.front = self.front.next
+            if self.front is None:
+                self.back = None
+            return dequeued.dataval
+
+        def peek(self):
+            if self.front is None:
+                raise InvalidOperationError
+            return self.front.dataval
+
+        def is_empty(self):
+            return self.front is None
