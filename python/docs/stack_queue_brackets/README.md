@@ -11,7 +11,7 @@ representing whether the brackets in the string are balanced.
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![WhiteBoard](./White Board.png)
+![WhiteBoard](./brackets.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -20,6 +20,7 @@ Big O Notation:
 
 - O(n) time - because each character in string is processed only once.
 - O(n) space - because the stack can increase depended on the size of the string input.
+
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
 
