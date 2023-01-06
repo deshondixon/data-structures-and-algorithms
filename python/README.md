@@ -88,3 +88,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Stack and Queue Pseudo](docs/stack_queue_pseudo/README.md)
 - [Stack and Queue Animal Shelter](docs/stack_queue_animal_shelter/README.md)
 - [Stack and Queue Brackets](docs/stack_queue_brackets/README.md)
+- [Binary Tree and BST Implementation](docs/trees/README.md)
