@@ -31,18 +31,6 @@ Big O Notation:
   - Arguments: none
   - Returns: number
 
-#### Binary Search Tree
-
-- Add
-  - Arguments: value
-  - Return: nothing
-  - Adds a new node with that value in the correct location in the binary search tree.
-
-
-- Contains
-  - Argument: value
-  - Returns: boolean indicating whether the value is in the tree at least once.
-
 ## Tests
 
 [Tree Max Unit Tests](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/python/tests/code_challenges/test_tree_max.py)
