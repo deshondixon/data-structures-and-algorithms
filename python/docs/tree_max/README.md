@@ -14,15 +14,15 @@
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![Whiteboard Image](./White Board.png)
+![Whiteboard Image](./max_tree.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 Big O Notation:
 
-- time -
-- space -
+- time - because it traverses the entire tree.
+- space - because stores entire tree.
 
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
