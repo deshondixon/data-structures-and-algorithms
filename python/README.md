@@ -90,3 +90,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Stack and Queue Brackets](docs/stack_queue_brackets/README.md)
 - [Binary Tree and BST Implementation](docs/trees/README.md)
 - [Tree Max](docs/tree_max/README.md)
+- [Tree Breadth First](docs/tree_breadth_first/README.md)
