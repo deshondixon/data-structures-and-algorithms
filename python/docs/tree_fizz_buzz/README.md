@@ -12,7 +12,7 @@
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![FizzBuzz](./FizzBuzz.png)
+![FizzBuzz](./fizzbuzz.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -43,4 +43,27 @@ Big O Notation:
 
 ## Solution
 
+def fizz_buzz_tree(tree):
 
+    cloned = tree.clone()
+
+    def fizz_buzz(node):
+        if node.value % 3 == 0 and node.value % 5 == 0:
+            node.value = "FizzBuzz"
+        elif node.value % 3 == 0:
+            node.value = "Fizz"
+        elif node.value % 5 == 0:
+            node.value = "Buzz"
+        else:
+            node.value = str(node.value)
+
+        for x in node.children:
+            fizz_buzz(x)
+
+    fizz_buzz(cloned.root)
+    return cloned
+
+## Reference
+- Got starter code from JB for queue and to begin Kary Tree.
+- Utilized code from class example Adam showed us of Ian's code to figure out this code challenge.
+- Credit to Oliver Spier as well as his code was also referenced in today review of code challenge.
