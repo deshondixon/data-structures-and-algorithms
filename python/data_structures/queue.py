@@ -2,9 +2,9 @@ from data_structures.invalid_operation_error import InvalidOperationError
 
 
 class Node:
-    def __init__(self, dataval):
+    def __init__(self, dataval, next=None):
         self.dataval = dataval
-        self.next = None
+        self.next = next
 
 
 class Queue:
@@ -14,26 +14,29 @@ class Queue:
         self.back = None
 
     def enqueue(self, dataval):
-        new_node = Node(dataval)
         if self.back:
-            self.back.next = new_node
-            self.back = new_node
-        else:
-            self.front = self.back = new_node
+            self.back.next = Node(dataval)
+            self.back = self.back.next
+            return
+        self.back = self.front = Node(dataval)
 
     def dequeue(self):
-        if self.front is None:
-            raise InvalidOperationError
-        dequeued = self.front
-        self.front = self.front.next
-        if self.front is None:
-            self.back = None
-        return dequeued.dataval
+        try:
+            if self.front == self.back:
+                dequeued = self.front
+                self.front = self.back = None
+                return dequeued.dataval
+            dequeued = self.front
+            self.front = self.front.next
+            return dequeued.dataval
+        except Exception as e:
+            raise InvalidOperationError(e)
 
     def peek(self):
-        if self.front is None:
-            raise InvalidOperationError
-        return self.front.dataval
+        try:
+            return self.front.dataval
+        except Exception as e:
+            raise InvalidOperationError(e)
 
     def is_empty(self):
         return self.front is None
