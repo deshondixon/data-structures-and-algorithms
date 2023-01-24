@@ -77,4 +77,4 @@ Big O Notation:
 
 ## References
 
-- Visual example, pseudocode, step-through where used as they were provided from today's code challenge instructions.
+- Pseudocode where used as they were provided from today's code challenge instructions.
