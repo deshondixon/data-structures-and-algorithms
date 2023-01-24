@@ -46,6 +46,9 @@ Big O Notation:
             arr[j + 1] = key
         return arr
 
+## References
+
+- Visual example, pseduocode, step-through where used as they were provided from today's code challenge instructions.
 
 
 
