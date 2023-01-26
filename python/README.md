@@ -93,3 +93,5 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Tree Breadth First](docs/tree_breadth_first/README.md)
 - [Tree Fizz Buzz](docs/tree_fizz_buzz/README.md)
 - [Insertion Sort](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/sorting/insertion/README.md)
+- [Merge Sort](https://github.com/deshondixon/data-structures-and-algorithms/tree/main/sorting/merge/README.md)
+- [Sort Comparison](https://github.com/deshondixon/data-structures-and-algorithms/tree/main/sorting/sort/README.md)
