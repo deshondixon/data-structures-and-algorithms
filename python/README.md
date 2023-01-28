@@ -95,3 +95,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Insertion Sort](https://github.com/deshondixon/data-structures-and-algorithms/blob/main/sorting/insertion/README.md)
 - [Merge Sort](https://github.com/deshondixon/data-structures-and-algorithms/tree/main/sorting/merge/README.md)
 - [Sort Comparison](https://github.com/deshondixon/data-structures-and-algorithms/tree/main/sorting/sort/README.md)
+- [Hash Table](docs/hashtable/README.md)
