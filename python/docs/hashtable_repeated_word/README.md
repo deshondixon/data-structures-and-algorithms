@@ -23,7 +23,7 @@ Big O Notation:
 - space -  -
 
 ## API
-<!-- Description of each method publicly available to your Stack and Queue-->
+<!-- Description of each method publicly available -->
 
 - Write a function called repeated word that finds the first word to occur more than once in a string
   - Arguments: string
