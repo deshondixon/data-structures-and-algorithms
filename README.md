@@ -44,3 +44,4 @@ To run your tests
 - [Sort Comparison](sorting/sort/README.md)
 - [Hash Table](python/docs/hashtable/README.md)
 - [HashTable Repeated Table](python/docs/hashtable_repeated_word/README.md)
+- [Tree Intersection](python/docs/tree_intersection/README.md)
