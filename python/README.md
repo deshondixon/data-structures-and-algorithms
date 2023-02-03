@@ -98,3 +98,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Hash Table](docs/hashtable/README.md)
 - [HashTable Repeated Table](docs/hashtable_repeated_word/README.md)
 - [Tree Intersection](docs/tree_intersection/README.md)
+- [Graph](docs/graph/README.md)
