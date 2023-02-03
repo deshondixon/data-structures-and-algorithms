@@ -17,6 +17,7 @@ def test_append():
 
 # @pytest.mark.skip("TODO")
 
+
 def test_insert_before():
     linked_list = LinkedList()
 

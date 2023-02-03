@@ -51,7 +51,6 @@ class Cat:
 
 
 class Queue(deque):
-
     def enqueue(self, value):
         self.append(value)
 
