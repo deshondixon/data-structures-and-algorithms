@@ -46,3 +46,4 @@ To run your tests
 - [HashTable Repeated Table](python/docs/hashtable_repeated_word/README.md)
 - [Tree Intersection](python/docs/tree_intersection/README.md)
 - [Graph](python/docs/graph/README.md)
+- [Graph Business Trip](python/docs/graph_business_trip/README.md)
