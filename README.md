@@ -47,3 +47,4 @@ To run your tests
 - [Tree Intersection](python/docs/tree_intersection/README.md)
 - [Graph](python/docs/graph/README.md)
 - [Graph Business Trip](python/docs/graph_business_trip/README.md)
+- [Graph Depth First Traversal](python/docs/graph_depth_first/README.md)

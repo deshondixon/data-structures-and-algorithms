@@ -11,6 +11,7 @@ Each type of code challenge has slightly different instructions. Please refer to
 - Create a new folder under the `python` level, with the name of the data structure and complete your implementation there
   - i.e. `linked_list`
 - Implementation (the data structure "class")
+
   - The implementation of the data structure should match package name
     - i.e. `linked_list/linked_list.py`
   - Follow Python [naming conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions)
@@ -67,7 +68,7 @@ Code challenges should be completed within a folder named `code_challenges` unde
 
 ## Running Tests
 
-If you setup your folders according to the above guidelines, running tests becomes a matter of deciding which tests you want to execute.  Jest does a good job at finding the test files that match what you specify in the test command
+If you setup your folders according to the above guidelines, running tests becomes a matter of deciding which tests you want to execute. Jest does a good job at finding the test files that match what you specify in the test command
 
 From the root of the `data-structures-and-algorithms/python` folder, execute the following commands:
 
@@ -100,3 +101,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 - [Tree Intersection](docs/tree_intersection/README.md)
 - [Graph](docs/graph/README.md)
 - [Graph Business Trip](docs/graph_business_trip/README.md)
+- [Graph Depth First Traversal](docs/graph_depth_first/README.md)
